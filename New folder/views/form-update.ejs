@@ -1,0 +1,28 @@
+<h1>Sửa User</h1>
+<form action="/Update" method="POST">
+  ID: <input type="text" name="id" value="<%= User4.id%>" /><br />
+  LatLong:
+  <input type="text" name="LatLong" value="<%= User4.LatLong%>" /><br />
+  Role:<input type="text" name="Role" value="<%= User4.Role%>" /><br />
+  OpenHour:<input
+    type="number"
+    name="OpenHour"
+    value="<%= User4.OpenHour%>"
+  /><br />
+  DefaultAccount:<input
+    type="number"
+    name="DefaultAccount"
+    value="<%= User4.DefaultAccount%>"
+  /><br />
+  BankName:<input
+    type="text"
+    name="BankName"
+    value="<%= User4.BankName%>"
+  /><br />
+  BranchName:<input
+    type="text"
+    name="BranchName"
+    value="<%= User4.BranchName%>"
+  /><br />
+  <button type="submit">Sửa User</button>
+</form>

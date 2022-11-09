@@ -1,0 +1,23 @@
+<h1>Sửa User</h1>
+<form action="/Update" method="POST">
+  ID: <input type="text" name="id" value="<%= User4.id%>" /><br />
+  IdDistrict:
+  <input type="text" name="IdDistrict" value="<%= User4.IdDistrict%>" /><br />
+  IdVillage:<input type="text" name="IdVillage" value="<%= User4.IdVillage%>" /><br />
+  Address:<input
+    type="text"
+    name="Address"
+    value="<%= User4.Address%>"
+  /><br />
+  BankName:<input
+    type="text"
+    name="BankName"
+    value="<%= User4.BankName%>"
+  /><br />
+  BranchName:<input
+    type="text"
+    name="BranchName"
+    value="<%= User4.BranchName%>"
+  /><br />
+  <button type="submit">Sửa User</button>
+</form>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Danh sách User4</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Danh sách User4</h1>
+    <a href="form-add"><button>Thêm User</button></a>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>LatLong</th>
+        <th>Role</th>
+        <th>OpenHour</th>
+        <th>DefaultAccount</th>
+        <th>BankName</th>
+        <th>BranchName</th>
+        <th>ACTION</th>
+      </tr>
+      <% User4s.forEach(item => { %>
+      <tr>
+        <td><%= item._id%></td>
+        <td><%= item.LatLong%></td>
+        <td><%= item.Role%></td>
+        <td><%= item.OpenHour%></td>
+        <td><%= item.DefaultAccount%></td>
+        <td><%= item.BankName%></td>
+        <td><%= item.BranchName%></td>
+        <td>
+          <a href="/form-update/<%= item._id%> ">Update</a>||
+          <a href="/form-delete/<%= item._id%> ">Delete</a>
+        </td>
+        <% }) %>
+      </tr>
+    </table>
+  </body>
+</html>
